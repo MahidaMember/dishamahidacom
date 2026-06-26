@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Devanshi Mahida Mahida|Portfolio</title>
+<title>Devanshi Mahida | Portfolio</title>
 
 <style>
 body {
@@ -36,7 +36,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* HOME SCREEN (POPUP STYLE) */
+/* HOME SCREEN */
 #homeScreen {
     position: fixed;
     top: 0;
@@ -50,11 +50,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     z-index: 2000;
-}
-
-#homeScreen h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
 }
 
 #exploreBtn {
@@ -82,6 +77,14 @@ section {
     box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 30px;
+    margin-top: 50px;
+}
+
 /* PROFILE IMAGE */
 header img {
     width: 150px;
@@ -90,14 +93,6 @@ header img {
     object-fit: cover;
     margin-top: 15px;
     border: 3px solid white;
-}
-
-/* HEADER */
-header {
-    background: linear-gradient(90deg, #1e3a8a, #2563eb);
-    color: white;
-    padding: 30px;
-    margin-top: 50px;
 }
 
 /* PROJECTS */
@@ -132,28 +127,32 @@ header {
 <!-- HEADER -->
 <header id="home">
     <h1>Devanshi Mahida</h1>
-    <p>Dea and Erp Cordinator at NutraMed  | Medicine Packing | Computers and Medicine</p>
-    <img src="IMG-3402 (1).jpeg" alt="Profile Image">
+    <p>ERP Coordinator at NutraMed | Medicine Packing | Computer Skills</p>
+
+    <!-- ✅ PROFILE IMAGE FIXED HERE -->
+    <img src="profile.jpg" alt="Profile Photo">
 </header>
 
 <section id="about">
     <h2>About Me</h2>
-    <p>Hello! My name is Devanshi Mahida. I work as a DEA and ERP Co Ordinator at the NutraMed
-    I have 2 kids and I am from India and I traveled from thre to here a lot. I am also Great at sports like Vollyball and Handball.</p>
+    <p>Hello! My name is Devanshi Mahida. I work at NutraMed as an ERP Coordinator.
+    I enjoy learning new skills and I am interested in technology and teamwork.</p>
 </section>
 
 <section id="experience">
     <h2>Experience</h2>
-    <ul> <li>3+ years in Medicine</li>
-        <li>Team Work</li>
+    <ul>
+        <li>ERP Coordinator at NutraMed</li>
+        <li>3+ years in Medicine Handling</li>
+        <li>Team Work Experience</li>
     </ul>
 </section>
 
 <section id="skills">
     <h2>Skills</h2>
     <ul>
-        <li>Medicine Packing/Handling</li>
-        <li>Working with Teams</li>
+        <li>Medicine Packing / Handling</li>
+        <li>Team Collaboration</li>
         <li>Problem Solving</li>
     </ul>
 </section>
@@ -162,20 +161,19 @@ header {
     <h2>Projects</h2>
 
     <div class="project">
-        <h3>working with big machines</h3>
-        <p>Working with Warehouses/Supply Chain.</p>
+        <h3>Warehouse Work System</h3>
+        <p>Managing and organizing supply chain operations.</p>
     </div>
 </section>
 
 <section id="education">
     <h2>Education</h2>
     <p>
-        India for Masters of Arts (2007–2009)<br>
-        India for Batchlor of Arts 2004 - 2007
+        Master of Arts (2007–2009)<br>
+        Bachelor of Arts (2004–2007)
     </p>
 </section>
 
-<!-- SCRIPT -->
 <script>
 function enterSite() {
     document.getElementById("homeScreen").style.display = "none";
