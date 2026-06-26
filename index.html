@@ -3,50 +3,41 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Devanshi Mahida | Portfolio</title>
+
+<title>YOUR NAME | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-*{
+body{
 margin:0;
-padding:0;
-box-sizing:border-box;
+font-family:'Inter',sans-serif;
+background:#FAFAF8;
+color:#1A1A1A;
 scroll-behavior:smooth;
 }
 
-body{
-font-family:Inter;
-background:#0B0B0B;
-color:#F5F5F5;
-line-height:1.6;
-}
-
-nav{
+/* NAV */
+.nav{
 position:fixed;
 top:0;
 width:100%;
 display:flex;
 justify-content:space-between;
-align-items:center;
-padding:20px 60px;
-background:rgba(0,0,0,0.6);
+padding:20px 50px;
+background:rgba(255,255,255,0.8);
 backdrop-filter:blur(10px);
-z-index:1000;
+border-bottom:1px solid #E5E5E5;
 }
 
-nav h2{
-font-family:Playfair Display;
-color:#C8A96A;
-}
-
-nav a{
-color:#F5F5F5;
-margin-left:25px;
+.nav a{
+color:#1A1A1A;
+margin:0 15px;
 text-decoration:none;
 font-size:14px;
 }
 
+/* HERO */
 .hero{
 height:100vh;
 display:flex;
@@ -54,88 +45,76 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding:0 20px;
+padding:20px;
 }
 
 .hero h1{
-font-family:Playfair Display;
-font-size:70px;
+font-family:'Playfair Display',serif;
+font-size:60px;
 }
 
-.hero span{
-color:#C8A96A;
+.highlight{
+color:#8B6B3D;
 }
 
 .hero p{
 max-width:600px;
-margin-top:20px;
-color:#A1A1AA;
+color:#555;
+margin-top:10px;
 }
 
-.btn{
-margin-top:30px;
-padding:14px 30px;
-background:#C8A96A;
-color:#111;
-border:none;
-border-radius:30px;
-text-decoration:none;
-font-weight:600;
-}
-
+/* SECTIONS */
 section{
-padding:120px 20px;
-max-width:1000px;
+padding:100px 20px;
+max-width:900px;
 margin:auto;
 text-align:center;
 }
 
 h2{
-font-family:Playfair Display;
+font-family:'Playfair Display',serif;
 font-size:40px;
-margin-bottom:20px;
 }
 
+/* CARD */
 .card{
-background:#151515;
-padding:30px;
-border-radius:20px;
-margin:20px 0;
+background:#fff;
+border:1px solid #E5E5E5;
+padding:25px;
+margin:15px 0;
+border-radius:16px;
+box-shadow:0 5px 20px rgba(0,0,0,0.03);
 }
 
-.skills{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:10px;
-}
-
+/* SKILLS */
 .skill{
-background:#151515;
-padding:10px 18px;
+display:inline-block;
+background:#F3F3F3;
+padding:8px 15px;
+margin:5px;
 border-radius:20px;
 font-size:14px;
 }
 
-.project{
-background:#151515;
-padding:25px;
-border-radius:20px;
-margin:15px 0;
-}
-
-footer{
-text-align:center;
-padding:50px;
-color:#777;
+/* BUTTON */
+.btn{
+background:#8B6B3D;
+color:#fff;
+padding:12px 25px;
+border-radius:25px;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
 }
 </style>
 </head>
 
 <body>
 
-<nav>
-<h2>DM.</h2>
+<!-- NAV -->
+<div class="nav">
+<div><b>INITIALS</b></div>
+
 <div>
 <a href="#about">About</a>
 <a href="#experience">Experience</a>
@@ -143,103 +122,109 @@ color:#777;
 <a href="#work">Work</a>
 <a href="#contact">Contact</a>
 </div>
-</nav>
+</div>
 
 <!-- HERO -->
 <div class="hero">
-<h1>Devanshi <span>Mahida</span></h1>
-<p>Professional • Dedicated • Experienced in delivering excellence through knowledge, leadership and commitment.</p>
-<a href="#about" class="btn">Explore</a>
+
+<h1>YOUR NAME <span class="highlight">SURNAME</span></h1>
+
+<p>YOUR PROFESSION (Teacher, Accountant, Developer, etc.)</p>
+
+<p>Short professional description goes here (2–3 lines only).</p>
+
+<a class="btn" href="#about">Explore</a>
+
 </div>
 
 <!-- ABOUT -->
 <section id="about">
+
 <h2>About Me</h2>
+
 <div class="card">
 <p>
-Devanshi Mahida is a highly motivated and experienced professional
-dedicated to excellence in her field. She brings strong skills in
-communication, leadership, and problem solving while maintaining
-high standards of integrity and professionalism.
+WRITE YOUR FULL BIO HERE.
+Who you are, your experience, achievements, and goals.
 </p>
 </div>
+
 </section>
 
 <!-- EXPERIENCE -->
 <section id="experience">
+
 <h2>Experience</h2>
 
 <div class="card">
-<h3>Senior Professional</h3>
-<p>ABC Company • 2022 – Present</p>
-<p>Responsible for managing key operations, improving workflows, and ensuring high-quality results.</p>
+<h3>JOB TITLE 1</h3>
+<p>COMPANY • YEAR – YEAR</p>
+<p>WHAT YOU DID HERE</p>
 </div>
 
 <div class="card">
-<h3>Mid-Level Role</h3>
-<p>XYZ Company • 2018 – 2022</p>
-<p>Worked on core responsibilities, client handling, and team coordination.</p>
+<h3>JOB TITLE 2</h3>
+<p>COMPANY • YEAR – YEAR</p>
+<p>WHAT YOU DID HERE</p>
 </div>
 
 <div class="card">
-<h3>Junior Role</h3>
-<p>Startup / Early Career • 2014 – 2018</p>
-<p>Built foundational experience and developed professional skills.</p>
+<h3>JOB TITLE 3</h3>
+<p>COMPANY • YEAR – YEAR</p>
+<p>WHAT YOU DID HERE</p>
 </div>
+
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
+
 <h2>Skills</h2>
 
-<div class="skills">
-<div class="skill">Leadership</div>
-<div class="skill">Communication</div>
-<div class="skill">Problem Solving</div>
-<div class="skill">Time Management</div>
-<div class="skill">Teamwork</div>
-<div class="skill">Organization</div>
-<div class="skill">Microsoft Office</div>
-<div class="skill">Planning</div>
-<div class="skill">Client Handling</div>
-<div class="skill">Decision Making</div>
+<div>
+<span class="skill">Skill 1</span>
+<span class="skill">Skill 2</span>
+<span class="skill">Skill 3</span>
+<span class="skill">Skill 4</span>
+<span class="skill">Skill 5</span>
 </div>
+
 </section>
 
 <!-- WORK -->
 <section id="work">
-<h2>Work</h2>
 
-<div class="project">
-<h3>Professional Achievement 1</h3>
-<p>Successfully handled high-impact responsibilities and delivered consistent results.</p>
+<h2>Work / Projects</h2>
+
+<div class="card">
+<h3>PROJECT 1</h3>
+<p>Project description goes here</p>
 </div>
 
-<div class="project">
-<h3>Professional Achievement 2</h3>
-<p>Improved workflow efficiency and contributed to organizational growth.</p>
+<div class="card">
+<h3>PROJECT 2</h3>
+<p>Project description goes here</p>
 </div>
 
-<div class="project">
-<h3>Professional Achievement 3</h3>
-<p>Led key tasks and supported important projects with strong execution.</p>
+<div class="card">
+<h3>PROJECT 3</h3>
+<p>Project description goes here</p>
 </div>
+
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
+
 <h2>Contact</h2>
 
 <div class="card">
-<p>Email: devanshi@email.com</p>
+<p>Email: your@email.com</p>
 <p>Phone: +91 XXXXX XXXXX</p>
-<p>LinkedIn: linkedin.com/in/devanshi</p>
+<p>LinkedIn: your-link</p>
 </div>
-</section>
 
-<footer>
-© 2026 Devanshi Mahida • All Rights Reserved
-</footer>
+</section>
 
 </body>
 </html>
