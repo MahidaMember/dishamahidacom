@@ -3,182 +3,1158 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Devanshi Mahida | Portfolio</title>
+
+<title>Devanshi Mahida | Medical Packaging Professional</title>
 
 <style>
-body {
+
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background: #e0f2fe;
-    color: #1f2937;
+    padding: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
-/* TOP NAV */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f9fc;
+    color: #1f2937;
+    line-height: 1.7;
+}
+
+/* ================= NAVIGATION ================= */
+
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #1d4ed8;
-    padding: 12px;
-    z-index: 1000;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* HOME SCREEN */
-#homeScreen {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, #1e3a8a, #2563eb);
-    color: white;
+
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #dbeafe;
+
+    padding: 15px 30px;
+
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1677a8;
+}
+
+nav a {
+    color: #334155;
+    text-decoration: none;
+    margin: 0 9px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #1677a8;
+}
+
+/* ================= HERO ================= */
+
+#home {
+    min-height: 100vh;
+
+    padding: 140px 25px 80px;
+
+    display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2000;
+
+    background: linear-gradient(
+        135deg,
+        #eaf8ff,
+        #ffffff,
+        #eefaff
+    );
 }
 
-#exploreBtn {
-    padding: 12px 25px;
-    font-size: 18px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background: white;
-    color: #1e3a8a;
+.hero-content {
+    max-width: 1050px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-label {
+    color: #1677a8;
+    font-size: 14px;
     font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
 }
 
-#exploreBtn:hover {
-    background: #e2e8f0;
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.1;
+
+    color: #12344d;
+
+    margin-bottom: 20px;
 }
 
-/* SECTIONS */
-section {
-    background: white;
-    max-width: 900px;
-    margin: 80px auto;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+.hero h1 span {
+    color: #168aad;
 }
 
-/* HEADER */
-header {
-    background: linear-gradient(90deg, #1e3a8a, #2563eb);
-    color: white;
-    padding: 30px;
-    margin-top: 50px;
+.hero-title {
+    font-size: 23px;
+    color: #475569;
+
+    margin-bottom: 20px;
+
+    font-weight: 600;
 }
 
-/* PROFILE IMAGE */
-header img {
-    width: 150px;
-    height: 150px;
+.hero-description {
+    color: #64748b;
+
+    max-width: 600px;
+
+    margin-bottom: 30px;
+}
+
+/* ================= PROFILE PHOTO ================= */
+
+.profile-container {
+    text-align: center;
+}
+
+.profile-container img {
+    width: 230px;
+    height: 230px;
+
     border-radius: 50%;
+
     object-fit: cover;
-    margin-top: 15px;
-    border: 3px solid white;
+
+    border: 7px solid white;
+
+    box-shadow:
+        0 15px 40px rgba(22, 119, 168, 0.18);
 }
 
-/* PROJECTS */
-.project {
-    background: #f1f5f9;
-    border-left: 5px solid #2563eb;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 8px;
+/* ================= BUTTONS ================= */
+
+.button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    background: #1677a8;
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin-right: 10px;
+
+    transition: 0.3s;
 }
+
+.button:hover {
+    background: #0f5f87;
+    transform: translateY(-2px);
+}
+
+.button-light {
+    background: white;
+    color: #1677a8;
+
+    border: 1px solid #b9ddeb;
+}
+
+.button-light:hover {
+    background: #eefaff;
+}
+
+/* ================= SECTIONS ================= */
+
+section.content-section {
+    max-width: 1050px;
+
+    margin: 80px auto;
+
+    padding: 80px 30px;
+}
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.section-heading p {
+    color: #168aad;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-size: 42px;
+
+    color: #12344d;
+}
+
+/* ================= ABOUT ================= */
+
+.about-box {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    border: 1px solid #dceef5;
+
+    box-shadow:
+        0 10px 35px rgba(15, 80, 110, 0.06);
+}
+
+.about-box p {
+    color: #52606d;
+
+    margin-bottom: 15px;
+}
+
+/* ================= PERSONAL INFO ================= */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-top: 30px;
+}
+
+.info-card {
+    background: white;
+
+    border: 1px solid #dceef5;
+
+    border-radius: 16px;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+.info-card .icon {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.info-card h3 {
+    font-size: 15px;
+
+    color: #12344d;
+
+    margin-bottom: 5px;
+}
+
+.info-card p {
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+/* ================= EXPERIENCE ================= */
+
+.experience-card {
+    background: white;
+
+    border-left: 5px solid #168aad;
+
+    padding: 30px;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 25px rgba(15, 80, 110, 0.06);
+}
+
+.experience-card h3 {
+    color: #12344d;
+
+    font-size: 23px;
+
+    margin-bottom: 5px;
+}
+
+.experience-date {
+    color: #168aad;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.experience-card p {
+    color: #64748b;
+}
+
+/* ================= SKILLS ================= */
+
+.skills-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px;
+}
+
+.skill {
+    background: white;
+
+    border: 1px solid #cfe7f0;
+
+    padding: 12px 20px;
+
+    border-radius: 30px;
+
+    color: #25617a;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background: #e9f8fd;
+
+    transform: translateY(-3px);
+}
+
+/* ================= JOURNEY ================= */
+
+.journey {
+    background: linear-gradient(
+        135deg,
+        #e7f7fc,
+        #ffffff
+    );
+
+    border-radius: 22px;
+
+    padding: 45px;
+
+    border: 1px solid #cfe8f1;
+
+    text-align: center;
+}
+
+.journey h3 {
+    color: #12344d;
+
+    font-size: 24px;
+}
+
+.journey p {
+    color: #64748b;
+
+    max-width: 700px;
+
+    margin: 15px auto;
+}
+
+.journey-arrow {
+    font-size: 35px;
+
+    color: #168aad;
+
+    margin: 20px;
+}
+
+/* ================= WORK ================= */
+
+.work-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+}
+
+.work-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    border: 1px solid #dceef5;
+
+    transition: 0.3s;
+}
+
+.work-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(15, 80, 110, 0.1);
+}
+
+.work-card h3 {
+    color: #12344d;
+
+    margin-bottom: 10px;
+}
+
+.work-card p {
+    color: #64748b;
+}
+
+/* ================= TRAVEL ================= */
+
+.travel-box {
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    border: 1px solid #dceef5;
+
+    text-align: center;
+}
+
+.travel-box p {
+    color: #64748b;
+
+    max-width: 750px;
+
+    margin: auto;
+}
+
+/* ================= EDUCATION ================= */
+
+.education-card {
+    background: white;
+
+    border: 1px solid #dceef5;
+
+    padding: 30px;
+
+    margin-bottom: 15px;
+
+    border-radius: 16px;
+}
+
+.education-card h3 {
+    color: #12344d;
+}
+
+.education-card p {
+    color: #64748b;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-box {
+    background: #12344d;
+
+    color: white;
+
+    border-radius: 22px;
+
+    padding: 50px;
+
+    text-align: center;
+}
+
+.contact-box h2 {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    color: #dbeafe;
+
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    color: white;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    background: #0f2d3d;
+
+    color: #cbd5e1;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer strong {
+    color: white;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        padding: 14px;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 4px;
+
+        font-size: 11px;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+
+        text-align: center;
+
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .profile-container img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section.content-section {
+        padding: 60px 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .button {
+        margin-bottom: 10px;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- HOME SCREEN -->
-<div id="homeScreen">
-    <h1>Devanshi Mahida</h1>
-    <button id="exploreBtn" onclick="enterSite()">Explore</button>
-</div>
 
-<!-- NAV -->
+<!-- ================= NAVIGATION ================= -->
+
 <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
+
+    <div class="logo">
+        DM.
+    </div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#journey">Journey</a>
+        <a href="#work">Work</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </div>
+
 </nav>
 
-<!-- HEADER -->
-<header id="home">
-    <h1>Devanshi Mahida</h1>
-    <p>ERP Coordinator at NutraMed | Medicine Packing | Computer Skills</p>
 
-    <!-- ✅ PROFILE IMAGE FIXED HERE -->
-    <img src="profile.jpg" alt="Profile Photo">
-</header>
+<!-- ================= HOME ================= -->
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello! My name is Devanshi Mahida. I work at NutraMed as an ERP Coordinator.
-    I enjoy learning new skills and I am interested in technology and teamwork.</p>
-</section>
+<section id="home">
 
-<section id="experience">
-    <h2>Experience</h2>
-    <ul>
-        <li>ERP Coordinator at NutraMed</li>
-        <li>3+ years in Medicine Handling</li>
-        <li>Team Work Experience</li>
-    </ul>
-</section>
+    <div class="hero-content">
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Medicine Packing / Handling</li>
-        <li>Team Collaboration</li>
-        <li>Problem Solving</li>
-    </ul>
-</section>
+        <div class="hero-text">
 
-<section id="projects">
-    <h2>Projects</h2>
+            <div class="hero-label">
+                Medical Packaging Professional
+            </div>
 
-    <div class="project">
-        <h3>Warehouse Work System</h3>
-        <p>Managing and organizing supply chain operations.</p>
+            <h1>
+                Devanshi
+                <span>Mahida</span>
+            </h1>
+
+            <p class="hero-title">
+                ERP Coordinator at NutraMed
+            </p>
+
+            <p class="hero-description">
+                A dedicated professional with more than 3 years
+                of experience in medical packaging, medicine
+                handling, organization, ERP coordination,
+                teamwork, and computer-based work.
+            </p>
+
+            <a href="#about" class="button">
+                About Me
+            </a>
+
+            <a href="#contact" class="button button-light">
+                Contact
+            </a>
+
+        </div>
+
+
+        <div class="profile-container">
+
+            <img
+                src="profile.jpg"
+                alt="Devanshi Mahida"
+            >
+
+        </div>
+
     </div>
+
 </section>
 
-<section id="education">
-    <h2>Education</h2>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="content-section">
+
+    <div class="section-heading">
+
+        <p>About Me</p>
+
+        <h2>My Story</h2>
+
+    </div>
+
+
+    <div class="about-box">
+
+        <p>
+            Hello, my name is Devanshi Mahida. I am originally
+            from India and now live in New Jersey, USA.
+        </p>
+
+        <p>
+            I have more than 3 years of experience in the
+            medical packaging field and currently work as an
+            ERP Coordinator at NutraMed.
+        </p>
+
+        <p>
+            Through my professional experience, I have
+            developed strong skills in medicine packing,
+            handling, organization, computer systems,
+            teamwork, communication, and attention to detail.
+        </p>
+
+        <p>
+            My journey from India to the United States has
+            given me the opportunity to experience different
+            cultures, environments, and professional
+            opportunities while continuing to grow personally
+            and professionally.
+        </p>
+
+    </div>
+
+
+    <div class="info-grid">
+
+        <div class="info-card">
+
+            <div class="icon">📍</div>
+
+            <h3>Location</h3>
+
+            <p>New Jersey, USA</p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="icon">🇮🇳</div>
+
+            <h3>Originally From</h3>
+
+            <p>India</p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="icon">👨‍👩‍👧‍👦</div>
+
+            <h3>Family</h3>
+
+            <p>Mother of Two</p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <div class="icon">🩺</div>
+
+            <h3>Experience</h3>
+
+            <p>3+ Years</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience" class="content-section">
+
+    <div class="section-heading">
+
+        <p>Professional Background</p>
+
+        <h2>Medical Experience</h2>
+
+    </div>
+
+
+    <div class="experience-card">
+
+        <h3>ERP Coordinator</h3>
+
+        <div class="experience-date">
+            NutraMed • Current Position
+        </div>
+
+        <p>
+            Working as an ERP Coordinator at NutraMed,
+            supporting organized and accurate computer-based
+            processes while working with teams and maintaining
+            attention to detail in a medical-related work
+            environment.
+        </p>
+
+    </div>
+
+
+    <div class="experience-card">
+
+        <h3>Medical Packaging & Handling</h3>
+
+        <div class="experience-date">
+            3+ Years of Experience
+        </div>
+
+        <p>
+            Experienced in medicine packing and handling,
+            maintaining organized workflows, paying close
+            attention to detail, and supporting quality-focused
+            processes.
+        </p>
+
+    </div>
+
+
+    <div class="experience-card">
+
+        <h3>Team Collaboration</h3>
+
+        <div class="experience-date">
+            Professional Experience
+        </div>
+
+        <p>
+            Experienced in working with teams, communicating
+            effectively with coworkers, staying organized,
+            and contributing to a productive workplace.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="content-section">
+
+    <div class="section-heading">
+
+        <p>Professional Strengths</p>
+
+        <h2>Skills</h2>
+
+    </div>
+
+
+    <div class="skills-container">
+
+        <span class="skill">Medical Packaging</span>
+
+        <span class="skill">Medicine Handling</span>
+
+        <span class="skill">ERP Systems</span>
+
+        <span class="skill">Computer Skills</span>
+
+        <span class="skill">Team Collaboration</span>
+
+        <span class="skill">Communication</span>
+
+        <span class="skill">Organization</span>
+
+        <span class="skill">Attention to Detail</span>
+
+        <span class="skill">Problem Solving</span>
+
+        <span class="skill">Time Management</span>
+
+        <span class="skill">Inventory Organization</span>
+
+        <span class="skill">Quality Focus</span>
+
+    </div>
+
+</section>
+
+
+<!-- ================= INDIA TO USA ================= -->
+
+<section id="journey" class="content-section">
+
+    <div class="section-heading">
+
+        <p>My Journey</p>
+
+        <h2>India to the USA</h2>
+
+    </div>
+
+
+    <div class="journey">
+
+        <h3>🇮🇳 India</h3>
+
+        <p>
+            Originally from India, where I completed my
+            education and began my journey.
+        </p>
+
+        <div class="journey-arrow">
+            ↓
+        </div>
+
+        <h3>🇺🇸 New Jersey</h3>
+
+        <p>
+            I moved to the United States and began a new
+            chapter of my life in New Jersey. My journey has
+            allowed me to experience new cultures, new
+            environments, and new professional opportunities.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WORK ================= -->
+
+<section id="work" class="content-section">
+
+    <div class="section-heading">
+
+        <p>Professional Work</p>
+
+        <h2>What I Do</h2>
+
+    </div>
+
+
+    <div class="work-grid">
+
+        <div class="work-card">
+
+            <h3>📦 Medical Packaging</h3>
+
+            <p>
+                Experience with medicine packing and handling,
+                organization, and detail-focused work.
+            </p>
+
+        </div>
+
+
+        <div class="work-card">
+
+            <h3>💻 ERP Coordination</h3>
+
+            <p>
+                Computer-based coordination and organized
+                processes as part of my role at NutraMed.
+            </p>
+
+        </div>
+
+
+        <div class="work-card">
+
+            <h3>📋 Organization</h3>
+
+            <p>
+                Maintaining organized workflows and paying
+                close attention to accuracy and detail.
+            </p>
+
+        </div>
+
+
+        <div class="work-card">
+
+            <h3>🤝 Teamwork</h3>
+
+            <p>
+                Working collaboratively with coworkers and
+                contributing to a positive and productive
+                workplace.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TRAVEL ================= -->
+
+<section class="content-section">
+
+    <div class="section-heading">
+
+        <p>Life Beyond Work</p>
+
+        <h2>Travel & Experiences</h2>
+
+    </div>
+
+
+    <div class="travel-box">
+
+        <p>
+            Traveling has been an important part of my life.
+            My journey from India to the United States has
+            allowed me to experience different places,
+            cultures, and ways of life.
+        </p>
+
+        <br>
+
+        <p>
+            Traveling has helped me appreciate different
+            perspectives and experiences while continuing to
+            grow as a person.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section id="education" class="content-section">
+
+    <div class="section-heading">
+
+        <p>Academic Background</p>
+
+        <h2>Education</h2>
+
+    </div>
+
+
+    <div class="education-card">
+
+        <h3>Master of Arts</h3>
+
+        <p>
+            2007 – 2009
+        </p>
+
+    </div>
+
+
+    <div class="education-card">
+
+        <h3>Bachelor of Arts</h3>
+
+        <p>
+            2004 – 2007
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FAMILY ================= -->
+
+<section class="content-section">
+
+    <div class="section-heading">
+
+        <p>Beyond My Career</p>
+
+        <h2>Family & Life</h2>
+
+    </div>
+
+
+    <div class="about-box">
+
+        <p>
+            Family is an important part of my life. I am a
+            mother of two children, and balancing family,
+            personal growth, and my professional career has
+            been an important part of my journey.
+        </p>
+
+        <p>
+            I enjoy learning new skills, traveling, spending
+            time with my family, and continuing to grow both
+            personally and professionally.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="content-section">
+
+    <div class="contact-box">
+
+        <h2>Let's Connect</h2>
+
+        <p>
+            Thank you for taking the time to learn more about
+            my professional journey.
+        </p>
+
+        <br>
+
+        <p>
+            Email:
+            <span class="contact-link">
+                devanshi@email.com
+            </span>
+        </p>
+
+        <p>
+            Phone:
+            <span class="contact-link">
+                +1 XXX XXX XXXX
+            </span>
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
     <p>
-        Master of Arts (2007–2009)<br>
-        Bachelor of Arts (2004–2007)
+        © 2026 <strong>Devanshi Mahida</strong>
     </p>
-</section>
 
-<script>
-function enterSite() {
-    document.getElementById("homeScreen").style.display = "none";
-}
-</script>
+    <p>
+        Medical Packaging • ERP Coordination • Professional Portfolio
+    </p>
+
+</footer>
+
 
 </body>
 </html>
